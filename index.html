@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie</title>
+    <link rel="stylesheet" href ="./style.css"></link>
+   
+</head>
+<body>
+    <div id = "title_container" class="container margin_prop">
+             <div class="font_class">FAVOURITE MOVIE</div>   
+            <input type="text" id="title" name="title" class="input_prop"><br/>
+            <div class="font_class">EXTRA INFO(NAME)</div>
+            <input type="text" id="extra_name" name="extra_name" class="input_prop"><br/>
+            <div class="font_class"> EXTRA INFO(VALUE)</div>
+            <input type="text" id="extra_value" name="extra_value" class="input_prop">
+            <br>
+            <input type ="submit"  value="Add movie" id="btn_add" class="btn" onclick="addMovieHandler()">
+
+    </div>
+    <div id="filter_container" class="container margin_prop">
+
+        <div class="font_class">FILTER BY TITLE</div>   
+
+            <input type="text" id="filter" name="fav_movie" class="input_prop"><br/>
+
+             <div><input type="submit" value="Search" id="btn_filter" class="btn" onclick="filterHandler()"></div>  
+
+             
+    </div>
+    <div id="result_container" class="container margin_prop">
+      <ul id ="myul" class="mt" >
+
+      </ul>
+    </div>
+    <script src="./app.js" defer></script>
+</body>
+</html>
